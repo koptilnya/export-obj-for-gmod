@@ -16,7 +16,7 @@ bl_info = {
     "author" : "Opti1337",
     "description" : "",
     "blender" : (2, 80, 0),
-    "version" : (0, 0, 1),
+    "version" : (1, 0, 1),
     "location" : "",
     "warning" : "",
     "category" : "Generic"
@@ -93,3 +93,6 @@ def register():
 def unregister():
     bpy.utils.unregister_class(ExportObjForGmod)
     bpy.types.TOPBAR_MT_file_export.remove(export_button)
+
+if __name__ == "__main__":
+    register()
